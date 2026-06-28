@@ -19,6 +19,7 @@ without any networking library. Every byte is handled explicitly.
 
 **Concepts:** BSD socket API, TCP 3-way handshake, network byte order, file descriptors in Linux.
 
+**How to run:**
 gcc server.c -o server
 gcc client.c -o client
 ./server # Terminal 1
@@ -35,6 +36,7 @@ An HTTP/1.1 client built entirely from scratch — no curl, no libcurl, no abstr
 
 **Concepts:** DNS resolution with `gethostbyname`, HTTP/1.1 request structure, `\r\n\r\n` header/body splitting, chunked transfer encoding, raw TCP I/O.
 
+**How to run:**
 gcc main.c -o rawhttp
 ./rawhttp example.com
 ./rawhttp neverssl.com
@@ -48,7 +50,7 @@ Host: example.com
 Connection: close
 === STATUS ===
 
-HTTP/1.1 200 OK
+HTTP/1.1 200 Ok
 === HEADERS ===
 Content-Type: text/html
 Transfer-Encoding: chunked
@@ -57,6 +59,7 @@ Server: cloudflare
 === BODY ===
 <!doctype html>...
 === TOTAL BYTES RECEIVED: 865 ===
+
 ---
 
 ## Where this is going
