@@ -91,7 +91,6 @@ Server: cloudflare
 
 ## Where this is going
 
-These projects are the foundation toward building **NetStacc** — a full userspace TCP/IP stack from scratch in C, implementing:
 
 - ARP
 - IPv4
